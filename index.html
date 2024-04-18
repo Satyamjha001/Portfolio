@@ -13,25 +13,28 @@
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
   </head>
   <body>
     <center>
-      <nav class="navbar">
-        <div class="left">
-          <span class="name"><a href="index.html">Satyam Jha</a></span>
-        </div>
-        <div class="right">
-          <a href="Contact.html">Contact</a>
-          <a href="PROJECT.HTML">Projects</a>
-          <a href="Skills.html">Skills</a>
-          <a href="SK Resume.pdf" target="_blank">Resume</a>
-          <a href="mailto:jsatyam104@gmail.com">Email</a>
-          <a href="https://shorturl.at/acwJ8">LinkedIn</a>
-
-          <span class="contact-info"></span>
-        </div>
-      </nav>
+      <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='index.html'>Satyam Jha</a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="PROJECT.HTML">Projects</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="SK Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="mailto:jsatyam104@gmail.com">Email</a></li>
+                <li><a href="https://shorturl.at/acwJ8">LinkedIn</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
       <header>
         <p>Welcome To My Portfolio !</p>
         <h1 id="myHeading" class="aboutme">
@@ -108,7 +111,7 @@
           <div class="project">
             <div class="project-inner">
               <!-- Added project-inner div -->
-              <img src="image/pro.jpg" alt="Project 1" />
+              <img src="image/homeauto.png" alt="Project 1" />
               <h2>Project 1</h2>
               <a href="Project1.html" class="button">View Project</a>
             </div>
@@ -126,7 +129,7 @@
               <!-- Added project-inner div -->
               <img src="image/pro.jpg" alt="Project 3" />
               <h2>Project 3</h2>
-              <a href="Project1.html" class="button">View Project</a>
+              <a href="Project3.html" class="button">View Project</a>
             </div>
           </div>
           <div class="project">
@@ -134,7 +137,15 @@
               <!-- Added project-inner div -->
               <img src="image/proj1.webp" alt="Project 4" />
               <h2>Project 4</h2>
-              <a href="Project2.html" class="button">View Project</a>
+              <a href="Project4.html" class="button">View Project</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-inner">
+              <!-- Added project-inner div -->
+              <img src="image/weather.png" alt="Project 5" />
+              <h2>Project 5</h2>
+              <a href="weather.html" class="button">View Project</a>
             </div>
           </div>
         </div>
@@ -212,7 +223,7 @@
       </footer>
 
       <div id="dark-mode-toggle" class="dark-mode-toggle">
-        <i class="fa fa-moon"></i>
+        <!-- <i class="fa fa-moon"></i> -->
       </div>
     </center>
     <script src="main.js"></script>
