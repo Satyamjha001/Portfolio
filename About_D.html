@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .cont {
+      max-width: 600px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease-out;
+    }
+    .h2 {
+      color: #333;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .h4 {
+      color: #666;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .h2_4 {
+      position: relative;
+      display: inline-block;
+      background-color: #ff6f61;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      animation: slideInLeft 0.5s ease-out, colorChange 2s infinite alternate;
+    }
+    p {
+      line-height: 1.6;
+      color: #444;
+      font-size: 16px;
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    /* Keyframe animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    @keyframes colorChange {
+      0% {
+        background-color: #ff6f61;
+      }
+      50% {
+        background-color: #62c1cc;
+      }
+      100% {
+        background-color: #ff6f61;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <h2 class="h2">About Me!</h2>
+    <h4 class="h4">
+      Hello, I am Satyam. Here's a little information about me:
+    </h4>
+    <h4 class="h2_4">Intro</h4>
+    <p>
+      I was born and raised in Darbhanga where I grew up in a Nadiyami Village
+      and always had good music playing around the house. These threads of
+      family, cricket, and music have defined my life path and experiences. I
+      am currently pursuing a Bachelor of Engineering in Electrical and
+      Electronics Engineering and Innovation from the University of Gunupur.
+    </p>
+  </div>
+</body>
+</html>
