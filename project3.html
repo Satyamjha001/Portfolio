@@ -58,8 +58,31 @@
   <div class="container">
     <section>
       <h2>Project Overview</h2>
-      <p><strong>Title of the project:</strong><br>....</p>
-      <p><strong>Description of the Project:</strong><br>......</p>
+      <p><strong>Title of the project:</strong><br>IoT-Based Real-Time Data Monitoring System Using ESP32S and Telit WE310G4-I.</p>
+      <p><strong>Description of the Project:</strong>To develop a system that monitors real-time data from various sensors and sends it to the cloud for storage and analysis. The system enables bi-directional communication, allowing users to control connected devices remotely via the cloud.<br></p>
+      <p><strong>System Components:</strong><br>ESP32S Module:
+      Acts as the main microcontroller, interfacing with sensors and managing data transmission to the cloud.
+      Features include integrated Wi-Fi, low power consumption, and GPIOs for sensor integration.
+      Telit WE310G4-I Module:
+      Provides robust Wi-Fi connectivity to facilitate communication with the cloud using AT commands.
+      Handles MQTT protocol for efficient data transmission.
+      Sensors:
+      DHT11 Sensor: Measures temperature and humidity.
+      MQTT Smoke Sensor: Detects smoke levels to monitor environmental safety.
+      PIR Sensor: Detects motion and triggers automation, such as turning on LEDs or fans.
+      Cloud Platforms:
+      Adafruit IO: For storing, visualizing, and analyzing sensor data.
+      MQTTX: To facilitate message exchange between the ESP32S and cloud servers.
+      Visualization Tools:
+      Node-RED: For creating a customizable dashboard with real-time updates.
+      Grafana: Used for visualizing charts and monitoring analog/digital sensor data.</p>
+      <p><strong>Tools and Technologies Used:</strong><br>Hardware: ESP32S, Telit WE310G4-I, DHT11, MQTT smoke sensor, PIR sensor.
+      Software: Arduino IDE, MQTTX platform, Node-RED, Grafana, Tera Term.
+      Protocols: MQTT for data exchange, AT commands for module configuration.</p>
+      <p><strong>Future Scope:</strong><br>Enhanced Automation:
+
+      Expand the system to support more appliances and sensors.
+      Introduce advanced controls such as scheduling and AI-based automation.</p>
       <img src="image/homeauto.png" alt="Placeholder Image">
       <!-- <iframe src="video.mp4" aria-label="Video Player" frameborder="0" allowfullscreen></iframe> -->
     </section>
